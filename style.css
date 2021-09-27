@@ -1,0 +1,252 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "New Tegomin", serif;
+}
+body {
+  position: relative;
+}
+.orange {
+  position: absolute;
+  top: -10vh;
+  right: 0;
+  z-index: -1; /*不會蓋住畫面*/
+  width: 50vw;
+  height: 130vh;
+}
+
+header nav {
+  width: 100%;
+}
+
+header nav ul {
+  width: 70%;
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+header nav ul li {
+  font-size: 1.8rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: rgb(3, 24, 117);
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main section.left {
+  flex: 3 1 500px;
+  padding: 2rem;
+}
+
+main section.left h1 {
+  font-size: 3rem;
+  color: chocolate;
+}
+
+main section.left p {
+  font-size: 1.25rem;
+  padding: 1rem 0rem;
+}
+
+main section.right {
+  flex: 1 1 600px;
+  position: relative;
+}
+
+main section.right img {
+  border-radius: 50%;
+  width: 23vw;
+  height: 30vw;
+  position: absolute;
+  top: 28vh;
+  right: 15vw;
+}
+
+main section.right img.read {
+  display: flex;
+  position: absolute;
+  top: 1vh;
+  right: 15vw;
+  height: 25%;
+  width: 25%;
+}
+
+.active {
+  color: rgb(228, 8, 8);
+}
+
+/*2 pages*/
+main section.table {
+  display: flex;
+  flex: 3 1 500px;
+}
+
+main section.photo {
+  flex: 1 1 600px;
+  position: relative; /*讓方塊移動位置*/
+}
+
+div.orangeRect {
+  width: 26vw;
+  height: 40vw;
+  background-color: #ffdd55;
+  position: absolute; /*讓方塊移動位置*/
+  top: 35px;
+  left: 80px;
+  z-index: -1;
+}
+
+main section.photo img {
+  width: 28vw;
+}
+
+main section.table {
+  padding: 1rem;
+}
+
+main section.table table {
+  border-collapse: collapse;
+}
+
+main section.table table tr:hover {
+  border-bottom: 2px solid blanchedalmond;
+  background-color: #cceeff;
+  transition: all 0.3s ease;
+}
+
+main section.table table tr td {
+  padding: 1rem;
+}
+
+/*3 pages*/
+main section.form {
+  flex: 1 1 200px;
+}
+main section.form form {
+  display: flex;
+  min-height: 70vh;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2rem;
+}
+
+main section.form form div {
+  margin: 0.5rem;
+}
+
+main section.form form div label {
+  font-size: 1.25rem;
+  margin-right: 1rem;
+}
+
+main section.form form div input,
+textarea {
+  background-color: #e6caff;
+  color: rgb(36, 21, 2);
+  font-size: 1.17rem;
+  padding: 0.25rem 1rem;
+  border: none;
+  width: 90%;
+}
+
+main section.form form div textarea {
+  vertical-align: top;
+}
+
+main section.form form button {
+  align-self: center;
+  background-color: #2894ff;
+  color: rgb(241, 229, 229);
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+main div.line {
+  background-color: #6c3365;
+  width: 3px;
+}
+
+main section.contact {
+  flex: 1 1 500px;
+  padding: 2rem;
+}
+
+main div.contact h2 {
+  font-size: 1.2rem;
+  margin: 1rem 1rem;
+}
+
+@media screen and (max-width: 1500px) {
+  main section.right img.read {
+    display: flex;
+    position: absolute;
+    position: static;
+    top: 90vh;
+    right: 20vw;
+    height: 15vw;
+    width: 15vw;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .orange {
+    opacity: 0.5; /*透明度*/
+  }
+  header nav ul {
+    flex-direction: column;
+    width: 100%; /*這樣線長就100%*/
+  }
+  header nav ul li {
+    padding: 1rem 0rem;
+    border-bottom: 2px solid rgb(243, 208, 8);
+  }
+  main section.right img {
+    position: static;
+    transform: none;
+    width: 25vw;
+    height: 30vw;
+  }
+  main section.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+  }
+
+  main section.photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  main section.photo img {
+    width: 40vw;
+  }
+  main section.photo div.orangeRect {
+    display: none;
+  }
+  footer a img {
+    padding: 2rem;
+  }
+}
+/*下拉選單*/
+.selectElem {
+  background-color: rgb(236, 206, 166);
+  color: rgb(49, 7, 5);
+  font-size: 150%;
+}
+
+.Ans {
+  font-size: 200%;
+}

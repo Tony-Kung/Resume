@@ -1,0 +1,74 @@
+div.animation {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(208, 233, 94);
+  position: fixed;
+  top: 0;
+  z-index: 5;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#one {
+  stroke-dasharray: 125px;
+  stroke-dashoffset: 125px;
+  animation: fadeInside 0.8s ease-in forwards;
+}
+
+#two {
+  stroke-dasharray: 114px;
+  stroke-dashoffset: 114px;
+  animation: fadeInside 1s ease-in forwards 0.3s;
+}
+
+#three {
+  stroke-dasharray: 135px;
+  stroke-dashoffset: 135px;
+  animation: fadeInside 1s ease-in forwards 0.6s;
+}
+
+#four {
+  stroke-dasharray: 128px;
+  stroke-dashoffset: 128px;
+  animation: fadeInside 1s ease-in forwards 0.9s;
+}
+
+#five {
+  stroke-dasharray: 316px;
+  stroke-dashoffset: 316px;
+  animation: fadeInside 2s ease-in forwards 1.2s;
+}
+
+#six {
+  stroke-dasharray: 409px;
+  stroke-dashoffset: 409px;
+  animation: fadeInside 2s ease-in forwards 1.7s;
+}
+
+#seven {
+  stroke-dasharray: 433px;
+  stroke-dashoffset: 433px;
+  animation: fadeInside 2s ease-in forwards 2.2s;
+}
+
+svg {
+  animation: fill 1s ease-in forwards 2.5s; /*把字填滿 的delay time*/
+}
+
+@keyframes fadeInside {
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes fill {
+  /*把字填滿*/
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #ebe70b;
+  }
+}
