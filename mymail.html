@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head lang="zh">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=divice-with, initial-scale=1.0">
+    <meta name="author" content="Tony Kung">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="這是Tony Kung的個人網站">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    
+    <link rel="stylesheet" href="./style.css"/>
+    <link rel="stylesheet" href="./video.css"/>
+    <!--下拉選單-->
+    <script src="./JS/Select.js"></script>
+   
+
+    <!--google font字型-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+    
+    <title>聯絡方式</title>
+
+
+</head>
+<body>
+
+    <!--header,navbar-->
+    <header>
+        <nav>
+          <ul>
+              <li><a  href="./index.html">首頁</a></li>
+              <li><a  href="./resume.html">我的履歷</a></li>
+              <li><a class="active" href="./mymail.html">聯絡方式</a></li>
+              
+          </ul>
+        </nav>
+     </header>
+
+     <main>
+         <section class="form">
+             <form>
+                 <div>
+                     <label for="name">姓名:</label>
+               <input type="text" name="name" /> 
+                 </div>
+               
+               <div>
+                    <label for="email">郵件:</label>
+               <input type="email" name="email" /> 
+               </div>
+                
+               <div>
+                    <label for="need">需求:</label>
+               <textarea name="need" id="need"  rows="15">        
+               </textarea>
+               
+               </div>
+         <button type="submit">提交表單</button>
+             </form>
+         </section>
+
+         <div class="line"></div>
+
+         <section class="contact">
+             <div class="contact">
+                 <h2>我的Email : hope1015@gmail.com</h2>
+                 <h2>方便聯絡時間 : 周一~周五,9:00am-7:00pm</h2>
+            
+            <!--放入map-->    
+                 <h2>居住於 : 新北市新店區</h2>
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57889.6956864564!2d121.49895076772029!3d24.928459294689446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346803de337f4fe1%3A0xe29baf27fbf0968f!2z5paw5YyX5biC5paw5bqX5Y2A!5e0!3m2!1szh-TW!2stw!4v1617960676993!5m2!1szh-TW!2stw"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+            </div>
+            <br>
+
+            <div class="select_wrap" id="selectWrap">
+                <dl>
+                    <dt>請選擇城市：</dt>
+                      <select class="selectElem" id="selectElem" onchange="getweather()">
+                        <option value="1">新北市</option>
+                        <option value="2">台北市</option>
+                        <option value="3">桃園市</option>
+                        <option value="4">台中市</option>
+                        <option value="5">高雄市</option>
+                      </select>
+                </dl>
+                <p class="Ans" id="Ans"></p>
+            </div>
+
+
+         </section>
+     </main>
+
+       <!--link fb ig ...footer-->
+   <footer>
+    <a href="https://www.facebook.com/" ><img src="./img/ICONS/facebook.svg" 
+     alt="facebook" tittle="facebook page"/></a>
+
+     <a href="https://github.com/"><img src="./img/ICONS/github-brands 1.svg" 
+         alt="github" tittle="github page"/></a>
+   </footer>
+
+</body>
+</html>
