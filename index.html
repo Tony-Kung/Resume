@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Tony Kung" />
+    <meta
+      name="description"
+      content="這是 Tony Kung 孔祥軒的個人現代化履歷網站"
+    />
+    <title>Tony Kung | Portfolio & Resume</title>
+    <!-- 引入 Google Fonts & FontAwesome 圖示 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Playfair+Display:ital,wght@0,600;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!--網頁開場動畫層 -->
+    <div class="intro-animation" id="animationLayer">
+      <div class="animation-text">
+        <span class="letter">T</span>
+        <span class="letter">O</span>
+        <span class="letter">N</span>
+        <span class="letter">Y</span>
+        <span class="chinese">孔</span>
+        <span class="chinese">祥</span>
+        <span class="chinese">軒</span>
+      </div>
+    </div>
+
+    <!--導覽列 -->
+    <header class="navbar">
+      <div class="nav-container">
+        <a href="#" class="logo">TONY.K</a>
+        <nav class="nav-menu">
+          <a href="#about" class="nav-link active">關於我</a>
+          <a href="#skills" class="nav-link">專業技術</a>
+          <a href="#experience" class="nav-link">工作經歷</a>
+          <a href="#contact" class="nav-link">聯絡方式</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <!-- 關於我 -->
+      <section id="about" class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <span class="subtitle">SOFTWARE ENGINEER</span>
+            <h1>Hi, I am <br /><span class="highlight">Tony Kung</span></h1>
+            <p class="description">
+              畢業於德明財經科技大學資訊科技系，具備資訊技術理論基礎與實務開發經驗。
+              個性活潑開朗、積極熱情，善於與團隊成員及跨部門夥伴溝通協調，面對挑戰時能保持主動學習與解決問題的態度。
+            </p>
+            <p class="description">
+              我是一位同時具備前端網頁與後端系統開發能力的軟體工程師，熱衷於透過技術解決問題，將複雜需求轉化為穩定且高效的系統功能。
+              職涯歷程涵蓋軟體測試、系統開發、客服系統、金融資訊系統維運及流程自動化等領域。
+              曾於全球人壽實習期間接觸 UiPath RPA
+              技術，於智弘科技擔任網頁前端工程師，負責網頁前端開發與品質驗證;
+              後續於大同世界科技擔任軟體工程師，參與 Web 系統與 ASP.NET Core
+              專案開發。 之後加入緯創軟體，負責 UiPath
+              流程自動化開發與維護，進一步累積企業流程優化與自動化導入經驗。
+            </p>
+            <p class="description">
+              在華南銀行資訊部門任職期間，主要負責集團集點系開發統維護，累積跨系統整合、需求分析、問題排除及系統維運經驗，並培養專案協作與文件撰寫能力。
+              未來希望結合過去經驗，持續投入
+              AI應用領域，發展智慧化解決方案，創造更高的技術價值與商業效益。
+            </p>
+            <div class="cta-buttons">
+              <a href="#contact" class="btn btn-primary">與我聯絡</a>
+              <a href="#experience" class="btn btn-secondary">瀏覽經歷</a>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="image-bg-deco">
+
+            <!--自動輪播幻燈片群組 -->
+            <div class="slider-container">
+              <!-- 第1張照片（預設帶有 active 類別） -->
+              <div class="slide active">
+                <img
+                  src="./img/pic/s1.jpg"
+                  alt="Tony Kung - Bike"
+                  class="profile-img"
+                />
+              </div>
+              <!-- 第2張照片 -->
+              <div class="slide">
+                <img
+                  src="./img/pic/s2.jpg"
+                  alt="Tony Kung - Reading"
+                  class="profile-img"
+                />
+              </div>
+              <!-- 第3張照片 -->
+              <div class="slide">
+                <img
+                  src="./img/pic/s3.jpg"
+                  alt="Tony Kung - Reading"
+                  class="profile-img"
+                />
+              </div>
+              <!-- 第4張照片 -->
+              <div class="slide">
+                <img
+                  src="./img/pic/s4.jpg"
+                  alt="Tony Kung - Project"
+                  class="profile-img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--  技術專長區塊  -->
+      <section id="skills" class="skills-section">
+        <div class="section-title">
+          <h2>專業技術 <span class="en">Skills</span></h2>
+          <div class="line"></div>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>前端開發</h3>
+            <div class="tag-container">
+              <span class="tag html">HTML5</span>
+              <span class="tag css">jQuery</span>
+              <span class="tag js">Bootstrap4</span>
+              <span class="tag jquery">JavaScript</span>
+              <span class="tag vue">CSS</span>
+              <span class="tag css">Sass</span>
+              <span class="tag js">Figma</span>
+              <span class="tag vue">Vue.js</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="card-icon"><i class="fa-solid fa-server"></i></div>
+            <h3>後端與資料庫</h3>
+            <div class="tag-container">
+              <span class="tag csharp">C# / .NET</span>
+              <span class="tag aspnet">ASP.NET Core</span>
+              <span class="tag sql">SQL Server</span>
+              <span class="tag python">Python</span>
+              <span class="tag java">Java</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="card-icon"><i class="fa-solid fa-robot"></i></div>
+            <h3>自動化與硬體</h3>
+            <div class="tag-container">
+              <span class="tag rpa">UiPath (RPA)</span>
+              <span class="tag arduino">Arduino</span>
+              <span class="tag android">Android</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 工作經歷時間軸 -->
+      <section id="experience" class="experience-section">
+        <div class="section-title">
+          <h2>工作經歷 <span class="en">Experience</span></h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="experience-cards-container">
+          <div class="exp-card">
+            <div class="exp-badge">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="exp-body">
+              <h3>華南銀行</h3>
+              <h4>資訊部</h4>
+              <p>
+                配合業務需求進行需求訪談，使用
+                <strong>ASP.NET</strong>
+                開發、維護系統，並持續提升安全性與穩定度。
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-badge">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="exp-body">
+              <h3>緯創軟體</h3>
+              <h4>法國巴黎人壽</h4>
+              <p>
+                與使用者及 BA
+                密切溝通報表需求，並根據確認的規格進行自動化流程開發與後續優化，提升系統使用滿意度，
+                <strong>並使用UiPath RPA (機器人流程自動化)</strong>
+                建置帳務報表自動化流程。
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-badge"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="exp-body">
+              <h3>軟體工程師</h3>
+              <h4>大同世界科技股份有限公司</h4>
+              <p>
+                維護各個客服系統的開發並
+                <strong>ASP.NET Core</strong>參與 Web 系統開發與 ASP.NET Core
+                專案建置。
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-badge"><i class="fa-solid fa-laptop-code"></i></div>
+            <div class="exp-body">
+              <h3>網頁前端工程師</h3>
+              <h4>智泓科技股份有限公司</h4>
+              <p>
+                負責軟體系統的功能測試與前端網頁開發。
+                <strong
+                  >主要使用:HTM、csss、、BootstrapJavaScript、jQuery</strong
+                >
+                完成網站互動功能與響應式版面設計，並配合客戶需求調整行銷網站樣式。
+              </p>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-badge">
+              <i class="fa-solid fa-user-graduate"></i>
+            </div>
+            <div class="exp-body">
+              <h3>應用軟體服務處 實習生</h3>
+              <h4>全球人壽保險股份有限公司</h4>
+              <p>
+                進行為期半年的企業實習，專注研習
+                <strong>UiPath RPA (機器人流程自動化)</strong>
+                技術，成功協助公司優化繁瑣的重複性行政流程，降低勞力與時間成本。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 聯絡方式區塊  -->
+      <section id="contact" class="contact-section">
+        <div class="section-title">
+          <h2>聯絡方式 <span class="en">Contact</span></h2>
+          <div class="line"></div>
+        </div>
+
+        <div class="contact-container pure-info-layout">
+          <!-- 聯絡資訊小卡群組 -->
+          <div class="contact-info-panel">
+            <div class="info-card">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="info-content">
+                <h3>電子郵件</h3>
+                <p>
+                  <a href="mailto:hope1015@gmail.com">hope1015@gmail.com</a>
+                </p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-clock"></i>
+              <div class="info-content">
+                <h3>方便聯絡時間</h3>
+                <p>週一 ~ 週五, 09:00 AM - 07:00 PM</p>
+              </div>
+            </div>
+            <div class="info-card">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="info-content">
+                <h3>居住地區</h3>
+                <p>新北市新店區</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 滿版精緻地圖 -->
+          <div class="contact-map-panel">
+            <div class="map-wrapper">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57889.6956864564!2d121.49895076772029!3d24.928459294689446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346803de337f4fe1%3A0xe29baf27fbf0968f!2z5paw5YyX5biC5paw5bqX5Y2A!5e0!3m2!1szh-TW!2stw!4v1617960676993!5m2!1szh-TW!2stw"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ⾴尾 -->
+    <footer class="footer">
+      <div class="footer-socials"></div>
+      <p>&copy; 2026 Tony Kung. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JS 控制動畫關閉與導覽列滾動狀態 -->
+    <script>
+      // 動畫 3.5 秒後自動淡出隱藏
+      setTimeout(() => {
+        const animationLayer = document.getElementById("animationLayer");
+        animationLayer.style.opacity = "0";
+        setTimeout(() => (animationLayer.style.display = "none"), 500);
+      }, 3500);
+
+      // 五秒自動換照輪播邏輯
+      const slides = document.querySelectorAll(".slide");
+      let currentSlideIndex = 0;
+
+      function nextSlide() {
+        // 1. 移除當前照片的 active 狀態
+        slides[currentSlideIndex].classList.remove("active");
+
+        // 2. 計算下一張照片的索引（若到最後一張則回到 0 循環）
+        currentSlideIndex = (currentSlideIndex + 1) % slides.length;
+
+        // 3. 為下一張照片加上 active 狀態，觸發 CSS 淡入效果
+        slides[currentSlideIndex].classList.add("active");
+      }
+
+      // 設定每 (5秒) 執行一次 nextSlide 函式
+      setInterval(nextSlide, 5000);
+
+      // 監聽滾動讓 Navbar 產生陰影變色
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
+  </body>
+</html>
